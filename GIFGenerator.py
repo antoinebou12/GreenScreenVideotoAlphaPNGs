@@ -1,5 +1,8 @@
 import os
 import imageio
+import numpngw
+import numpy
+import APNGLib
 import datetime
 from PIL import Image
 from natsort import natsorted, ns
@@ -11,14 +14,15 @@ import argparse
 
 def create_gif(directory):
     if os.path.isdir(directory):
-        images = [img for img in natsorted(os.listdir(directory), alg=ns.PATH) if img.endswith(".png")]
-        for filename in images:
-            if filename.endswith(".png"): 
-                images.append(Image.open("{}/{}".format(directory, filename)).convert('RGBA'))
-                
-    output_file = 'Gif-%s.gif' % datetime.datetime.now().strftime('%Y-%M-%d-%H-%M-%S')
-    imageio.mimsave(output_file, images)
+        images_name = [img for img in natsorted(os.listdir(directory), alg=ns.PATH) if img.endswith(".png")]
+        all_images = []
+        for filename in images_name: 
+            all_images.append(numpy.array(Image.open("{}/{}".format(directory, filename)).convert('RGBA')))
     
+    w, h, d = all_images[0].shape
+    output_file = '%s.gif' % directory
+    numpngw.write_apng(output_file, all_images, delay=50)
+    APNGLib.MakeGIF(output_file, "dir.gif", 0)
     
 if __name__ == "__main__":
 

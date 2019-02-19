@@ -69,10 +69,24 @@ def colorclose(Cb_p,Cr_p, Cb_key, Cr_key, tola, tolb):
     
 # Download video for youtube    
 def dl_video(link):
-    ydl_opts = {}
+    ydl_opts = {'format':'mp4'}
     with youtube_dl.YoutubeDL(ydl_opts) as ydl:
         ydl.download([link])
         return "{}-{}.mp4".format(ydl.extract_info(link)['title'], ydl.extract_info(link)['id'])
+                
+# Download audio for youtube    
+def dl_audio(link):
+    ydl_opts = {
+    'format': 'bestaudio/best',
+    'postprocessors': [{
+        'key': 'FFmpegExtractAudio',
+        'preferredcodec': 'mp3',
+        'preferredquality': '192',
+    }],
+}
+    with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+        ydl.download([link])
+        return "{}-{}.mp3".format(ydl.extract_info(link)['title'], ydl.extract_info(link)['id'])
     
 # Video to image
 """https://stackoverflow.com/questions/33311153/python-extracting-and-saving-video-frames"""
@@ -84,7 +98,7 @@ def video_to_images(video_name):
         if not os.path.exists(video_name[:-4]):
             os.makedirs(video_name[:-4])
         while success:
-          cv2.imwrite("{}/frame{}.png".format(video_name[:-4], count), image)     # save frame as JPEG file      
+          cv2.imwrite("{}/{}.png".format(video_name[:-4], count), image)     # save frame as JPEG file      
           success,image = vidcap.read()
           count += 1
         print('done')
@@ -93,16 +107,12 @@ def video_to_images(video_name):
 
 # Remove green in each image
 def removeGreenDir(directory):
-    if os.path.isdir(directory): 
-        count = 0
-        listDir =(os.listdir(directory))
-        inList = natsorted(listDir, alg=ns.PATH)
-        for filename in inList:
-            if filename.endswith(".png"): 
-                if not os.path.exists("{}_alpha".format(directory)):
-                    os.makedirs("{}_alpha".format(directory))
+    if os.path.isdir(directory):
+        images = [img for img in natsorted(os.listdir(directory), alg=ns.PATH) if img.endswith(".png")]
+        if not os.path.exists("{}_alpha".format(directory)):
+            os.makedirs("{}_alpha".format(directory))
+        for filename in images:
                 GreenScreen("{}/{}".format(directory,filename), "{}_alpha/{}".format(directory,filename))
-                count+=1
         print('done')
     else:
         print("not exist")
@@ -124,6 +134,7 @@ if __name__ == '__main__':
     
 
     video_name = dl_video(args.link) #Download
+    dl_audio(args.link) #Download
     video_to_images(video_name) #VideoToPNGs
     removeGreenDir(video_name[:-4]) #RemoveGreen
     

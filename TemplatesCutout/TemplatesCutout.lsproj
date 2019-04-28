@@ -1,25 +1,27 @@
 {
     "lens_id": "",
-    "document_id": "kNQxas9ZvQBfvW46jORi",
+    "document_id": "b3LID9U2hJaXHd_WOIID",
     "original_document_id": "s1ZKk-2cerI-FLX2N4oF",
-    "version": "2",
-    "lastChanged": "1550187943459",
+    "version": "14",
+    "lastChanged": "1556466119743",
     "preview": "icon.png",
+    "videoPreview": "",
+    "videoPreviewUpdateTime": "",
     "isReadOnly": "false",
     "studioVersion": {
         "createdWith": {
             "type": "Public",
-            "major": "1",
-            "minor": "7",
-            "patch": "1",
-            "build": "0"
+            "major": "2",
+            "minor": "0",
+            "patch": "0",
+            "build": "1"
         },
         "lastSavedWith": {
             "type": "Public",
-            "major": "1",
-            "minor": "7",
-            "patch": "1",
-            "build": "0"
+            "major": "2",
+            "minor": "0",
+            "patch": "0",
+            "build": "1"
         }
     },
     "view": {
@@ -62,7 +64,8 @@
         },
         "PreviewUiComponent": {
             "is_back_camera": "true",
-            "show_snap_ui": "true"
+            "show_snap_ui": "true",
+            "show_sponsored_ui": "false"
         },
         "InspectorUiComponent": {
             "collapsedList": [
@@ -82,7 +85,7 @@
         }
     },
     "model": {
-        "ResourceManager": {
+        "IResourceManager": {
             "list": [
                 {
                     "resId": "1",
@@ -90,9 +93,7 @@
                     "name": "Camera Output",
                     "sourceFilePath": "",
                     "additionalProperties": "",
-                    "flags": "0",
-                    "type": "1",
-                    "subtype": "1"
+                    "flags": "0"
                 },
                 {
                     "resId": "2",
@@ -100,21 +101,15 @@
                     "name": "Camera Input",
                     "sourceFilePath": "",
                     "additionalProperties": "",
-                    "flags": "0",
-                    "type": "1",
-                    "subtype": "3"
+                    "flags": "0"
                 },
                 {
                     "resId": "5",
                     "uid": "1498868100994851:367",
                     "name": "\/Resources\/Resource5.mesh",
                     "sourceFilePath": "",
-                    "additionalProperties": {
-                        "name": "ground_grid_mesh"
-                    },
-                    "flags": "5",
-                    "type": "3",
-                    "subtype": "0"
+                    "additionalProperties": "",
+                    "flags": "5"
                 },
                 {
                     "resId": "7",
@@ -122,9 +117,7 @@
                     "name": "\/Resources\/Resource7.js",
                     "sourceFilePath": "",
                     "additionalProperties": "",
-                    "flags": "1",
-                    "type": "4",
-                    "subtype": "0"
+                    "flags": "1"
                 },
                 {
                     "resId": "9",
@@ -132,9 +125,7 @@
                     "name": "\/Resources\/Resource9.png",
                     "sourceFilePath": "",
                     "additionalProperties": "",
-                    "flags": "1",
-                    "type": "1",
-                    "subtype": "0"
+                    "flags": "1"
                 },
                 {
                     "resId": "10",
@@ -142,9 +133,7 @@
                     "name": "\/Resources\/Resource10.png",
                     "sourceFilePath": "",
                     "additionalProperties": "",
-                    "flags": "1",
-                    "type": "1",
-                    "subtype": "0"
+                    "flags": "1"
                 },
                 {
                     "resId": "11",
@@ -152,9 +141,7 @@
                     "name": "\/Resources\/Resource11",
                     "sourceFilePath": "",
                     "additionalProperties": "",
-                    "flags": "1",
-                    "type": "2",
-                    "subtype": "0"
+                    "flags": "1"
                 },
                 {
                     "resId": "13",
@@ -162,9 +149,7 @@
                     "name": "\/Resources\/Resource13.js",
                     "sourceFilePath": "",
                     "additionalProperties": "",
-                    "flags": "1",
-                    "type": "4",
-                    "subtype": "0"
+                    "flags": "1"
                 },
                 {
                     "resId": "58",
@@ -172,49 +157,23 @@
                     "name": "\/Resources\/Resource58.js",
                     "sourceFilePath": "",
                     "additionalProperties": "",
-                    "flags": "1",
-                    "type": "4",
-                    "subtype": "0"
+                    "flags": "1"
                 },
                 {
                     "resId": "68",
                     "uid": "1509144448272280:6881",
                     "name": "\/Resources\/Resource68.mesh",
                     "sourceFilePath": "",
-                    "additionalProperties": {
-                        "name": "TouchCollisionCube"
-                    },
-                    "flags": "5",
-                    "type": "3",
-                    "subtype": "0"
+                    "additionalProperties": "",
+                    "flags": "5"
                 },
                 {
                     "resId": "118",
                     "uid": "1511400371353464:38794",
                     "name": "\/Resources\/Resource118",
                     "sourceFilePath": "",
-                    "additionalProperties": {
-                        "pass_source": [
-                            ""
-                        ]
-                    },
-                    "flags": "1",
-                    "type": "2",
-                    "subtype": "0"
-                },
-                {
-                    "resId": "135",
-                    "uid": "1546901043183050:3100",
-                    "name": "\/Resources\/Resource135",
-                    "sourceFilePath": "",
-                    "additionalProperties": {
-                        "pass_source": [
-                            "\/Users\/steve.marton\/Snapchat\/Dev\/Studio3D\/Resources\/Studio3DResources.bundle\/shaders\/flat.glsl"
-                        ]
-                    },
-                    "flags": "3",
-                    "type": "2",
-                    "subtype": "0"
+                    "additionalProperties": "",
+                    "flags": "1"
                 },
                 {
                     "resId": "143",
@@ -222,9 +181,7 @@
                     "name": "\/Resources\/Resource143.js",
                     "sourceFilePath": "",
                     "additionalProperties": "",
-                    "flags": "1",
-                    "type": "4",
-                    "subtype": "0"
+                    "flags": "1"
                 }
             ]
         },
@@ -232,6 +189,10 @@
             "Component": {
                 "FaceStretchVisual": {
                     "uidsToFeatureNamesWithIntensity": ""
+                },
+                "ScreenTransform": {
+                    "uidData": "",
+                    "generalData": ""
                 }
             }
         },
@@ -259,11 +220,547 @@
                 }
             ]
         },
+        "IFileManager": {
+            "pathes": [
+                {
+                    "k": "1",
+                    "v": "Files\/File1.mesh"
+                },
+                {
+                    "k": "2",
+                    "v": "Files\/File2.js"
+                },
+                {
+                    "k": "3",
+                    "v": "Files\/File3.png"
+                },
+                {
+                    "k": "4",
+                    "v": "Files\/File4.png"
+                },
+                {
+                    "k": "5",
+                    "v": "Files\/File5\/"
+                },
+                {
+                    "k": "6",
+                    "v": "Files\/File6.js"
+                },
+                {
+                    "k": "7",
+                    "v": "Files\/File7.js"
+                },
+                {
+                    "k": "8",
+                    "v": "Files\/File8.mesh"
+                },
+                {
+                    "k": "9",
+                    "v": "Files\/File9\/"
+                },
+                {
+                    "k": "10",
+                    "v": "Files\/File10.js"
+                },
+                {
+                    "k": "11",
+                    "v": "Files\/File11.lsmat"
+                },
+                {
+                    "k": "12",
+                    "v": "Files\/File12.lsmat"
+                }
+            ]
+        },
         "WorldComponent": {
-            "sceneFile": "scene.scn"
+            "sceneFile": "scene.scn",
+            "sceneType": "binaryScene"
         }
     },
     "controller": {
+        "IResourceController": {
+            "public": {
+                "pathes": [
+                    {
+                        "k": "1",
+                        "v": "Textures"
+                    },
+                    {
+                        "k": "2",
+                        "v": "Textures\/ground_grid.png"
+                    },
+                    {
+                        "k": "3",
+                        "v": "Textures\/ground_grid_mask.png"
+                    },
+                    {
+                        "k": "4",
+                        "v": "Meshes"
+                    },
+                    {
+                        "k": "5",
+                        "v": "Meshes\/ground_grid_mesh.mesh"
+                    },
+                    {
+                        "k": "6",
+                        "v": "Meshes\/touch_collision_cube.mesh"
+                    },
+                    {
+                        "k": "7",
+                        "v": "Materials"
+                    },
+                    {
+                        "k": "8",
+                        "v": "Materials\/ground_grid.lsmat"
+                    },
+                    {
+                        "k": "9",
+                        "v": "Materials\/touch_collision.lsmat"
+                    },
+                    {
+                        "k": "10",
+                        "v": "Scripts"
+                    },
+                    {
+                        "k": "11",
+                        "v": "Scripts\/GroundGrid.js"
+                    },
+                    {
+                        "k": "12",
+                        "v": "Scripts\/WorldObjectController.js"
+                    },
+                    {
+                        "k": "13",
+                        "v": "Scripts\/CutoutSceneController.js"
+                    },
+                    {
+                        "k": "14",
+                        "v": "Scripts\/Touchaudio.js"
+                    }
+                ],
+                "hashes": [
+                    {
+                        "k": "2",
+                        "v": "caeea0e0bf0313ac710d99cb41b32f56"
+                    },
+                    {
+                        "k": "3",
+                        "v": "c423d0672421aae010ca988af5ed0711"
+                    },
+                    {
+                        "k": "5",
+                        "v": "ca6a55793555b88df4aca4a7329624e5"
+                    },
+                    {
+                        "k": "6",
+                        "v": "e9167dc2c6b4be6840fd00390a21b633"
+                    },
+                    {
+                        "k": "8",
+                        "v": "1ddf8f09591fc391763523658e478348"
+                    },
+                    {
+                        "k": "9",
+                        "v": "a88c2a261d6ec667dce7327d1ad40211"
+                    },
+                    {
+                        "k": "11",
+                        "v": "09a5c3ee815c9134ffc2d25e7355d78a"
+                    },
+                    {
+                        "k": "12",
+                        "v": "cb4146e346161af3a4e676e06aa70836"
+                    },
+                    {
+                        "k": "13",
+                        "v": "1a5d30d690e28db9e8817b975ca60062"
+                    },
+                    {
+                        "k": "14",
+                        "v": "648a4a0c88fb54e8a5ce475bfa4e2d70"
+                    }
+                ],
+                "publicState": {
+                    "tree": {
+                        "isFolder": "true",
+                        "lastModified": "2019-04-28T11:41:58",
+                        "name": "Public",
+                        "hash": "ba8b40f92f72d6777a1915afccac0ecb",
+                        "children": [
+                            {
+                                "isFolder": "false",
+                                "lastModified": "2019-04-28T11:41:05",
+                                "name": "folder.lock",
+                                "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                "children": ""
+                            },
+                            {
+                                "isFolder": "true",
+                                "lastModified": "2019-04-28T11:41:58",
+                                "name": "Materials",
+                                "hash": "cdf4725a6109c2a523a996e1dc925201",
+                                "children": [
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-04-28T11:41:05",
+                                        "name": "folder.lock",
+                                        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-04-28T11:41:04",
+                                        "name": "ground_grid.lsmat",
+                                        "hash": "1ddf8f09591fc391763523658e478348",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-04-28T11:41:05",
+                                        "name": "touch_collision.lsmat",
+                                        "hash": "a88c2a261d6ec667dce7327d1ad40211",
+                                        "children": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "isFolder": "true",
+                                "lastModified": "2019-04-28T11:41:58",
+                                "name": "Meshes",
+                                "hash": "6c274a42b58d443b98c519ef06ab8ee2",
+                                "children": [
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-04-28T11:41:05",
+                                        "name": "folder.lock",
+                                        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-04-28T11:40:49",
+                                        "name": "ground_grid_mesh.mesh",
+                                        "hash": "ca6a55793555b88df4aca4a7329624e5",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-04-28T11:40:49",
+                                        "name": "touch_collision_cube.mesh",
+                                        "hash": "e9167dc2c6b4be6840fd00390a21b633",
+                                        "children": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "isFolder": "true",
+                                "lastModified": "2019-04-28T11:41:58",
+                                "name": "Scripts",
+                                "hash": "52b2c95b81971631d15ca99021c205b2",
+                                "children": [
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-04-28T11:40:49",
+                                        "name": "CutoutSceneController.js",
+                                        "hash": "1a5d30d690e28db9e8817b975ca60062",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-04-28T11:41:05",
+                                        "name": "folder.lock",
+                                        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-04-28T11:40:49",
+                                        "name": "GroundGrid.js",
+                                        "hash": "09a5c3ee815c9134ffc2d25e7355d78a",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-04-28T11:40:49",
+                                        "name": "Touchaudio.js",
+                                        "hash": "648a4a0c88fb54e8a5ce475bfa4e2d70",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-04-28T11:40:49",
+                                        "name": "WorldObjectController.js",
+                                        "hash": "cb4146e346161af3a4e676e06aa70836",
+                                        "children": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "isFolder": "true",
+                                "lastModified": "2019-04-28T11:41:58",
+                                "name": "Textures",
+                                "hash": "3b2d9d63c2c28abc2490761713c2e2b7",
+                                "children": [
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-04-28T11:41:05",
+                                        "name": "folder.lock",
+                                        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-04-28T11:40:49",
+                                        "name": "ground_grid.png",
+                                        "hash": "caeea0e0bf0313ac710d99cb41b32f56",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-04-28T11:40:49",
+                                        "name": "ground_grid_mask.png",
+                                        "hash": "c423d0672421aae010ca988af5ed0711",
+                                        "children": ""
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "complexResources": ""
+            },
+            "tree": {
+                "name": "",
+                "type": "0",
+                "subtype": "-1",
+                "resourceId": "-1",
+                "dependency": "0",
+                "uid": "-1:-1",
+                "fileId": "18446744073709551615",
+                "originalId": "18446744073709551615",
+                "publicId": "18446744073709551615",
+                "source": "",
+                "additional": "",
+                "resources": [
+                    {
+                        "name": "Textures",
+                        "type": "0",
+                        "subtype": "-1",
+                        "resourceId": "-1",
+                        "dependency": "0",
+                        "uid": "-1:-1",
+                        "fileId": "18446744073709551615",
+                        "originalId": "18446744073709551615",
+                        "publicId": "1",
+                        "source": "",
+                        "additional": "",
+                        "resources": [
+                            {
+                                "name": "Camera Output",
+                                "type": "1",
+                                "subtype": "1",
+                                "resourceId": "1",
+                                "dependency": "0",
+                                "uid": "1:1",
+                                "fileId": "18446744073709551615",
+                                "originalId": "18446744073709551615",
+                                "publicId": "18446744073709551615",
+                                "source": "",
+                                "additional": ""
+                            },
+                            {
+                                "name": "Device Camera Texture",
+                                "type": "1",
+                                "subtype": "3",
+                                "resourceId": "2",
+                                "dependency": "0",
+                                "uid": "2:2",
+                                "fileId": "18446744073709551615",
+                                "originalId": "18446744073709551615",
+                                "publicId": "18446744073709551615",
+                                "source": "",
+                                "additional": ""
+                            },
+                            {
+                                "name": "ground_grid",
+                                "type": "1",
+                                "subtype": "9",
+                                "resourceId": "9",
+                                "dependency": "0",
+                                "uid": "1498868172316494:515",
+                                "fileId": "3",
+                                "originalId": "18446744073709551615",
+                                "publicId": "2",
+                                "source": "",
+                                "additional": ""
+                            },
+                            {
+                                "name": "ground_grid_mask",
+                                "type": "1",
+                                "subtype": "9",
+                                "resourceId": "10",
+                                "dependency": "0",
+                                "uid": "1498868172318940:524",
+                                "fileId": "4",
+                                "originalId": "18446744073709551615",
+                                "publicId": "3",
+                                "source": "",
+                                "additional": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Meshes",
+                        "type": "0",
+                        "subtype": "-1",
+                        "resourceId": "-1",
+                        "dependency": "0",
+                        "uid": "-1:-1",
+                        "fileId": "18446744073709551615",
+                        "originalId": "18446744073709551615",
+                        "publicId": "4",
+                        "source": "",
+                        "additional": "",
+                        "resources": [
+                            {
+                                "name": "ground_grid_mesh",
+                                "type": "3",
+                                "subtype": "0",
+                                "resourceId": "5",
+                                "dependency": "0",
+                                "uid": "1498868100994851:367",
+                                "fileId": "1",
+                                "originalId": "18446744073709551615",
+                                "publicId": "5",
+                                "source": "",
+                                "additional": ""
+                            },
+                            {
+                                "name": "touch_collision_cube",
+                                "type": "3",
+                                "subtype": "0",
+                                "resourceId": "68",
+                                "dependency": "0",
+                                "uid": "1509144448272280:6881",
+                                "fileId": "8",
+                                "originalId": "18446744073709551615",
+                                "publicId": "6",
+                                "source": "",
+                                "additional": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Materials",
+                        "type": "0",
+                        "subtype": "-1",
+                        "resourceId": "-1",
+                        "dependency": "0",
+                        "uid": "-1:-1",
+                        "fileId": "18446744073709551615",
+                        "originalId": "18446744073709551615",
+                        "publicId": "7",
+                        "source": "",
+                        "additional": "",
+                        "resources": [
+                            {
+                                "name": "ground_grid",
+                                "type": "2",
+                                "subtype": "0",
+                                "resourceId": "11",
+                                "dependency": "0",
+                                "uid": "1498868172319414:533",
+                                "fileId": "5",
+                                "originalId": "11",
+                                "publicId": "8",
+                                "source": "",
+                                "additional": ""
+                            },
+                            {
+                                "name": "touch_collision",
+                                "type": "2",
+                                "subtype": "0",
+                                "resourceId": "118",
+                                "dependency": "0",
+                                "uid": "1511400371353464:38794",
+                                "fileId": "9",
+                                "originalId": "12",
+                                "publicId": "9",
+                                "source": "",
+                                "additional": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Scripts",
+                        "type": "0",
+                        "subtype": "-1",
+                        "resourceId": "-1",
+                        "dependency": "0",
+                        "uid": "-1:-1",
+                        "fileId": "18446744073709551615",
+                        "originalId": "18446744073709551615",
+                        "publicId": "10",
+                        "source": "",
+                        "additional": "",
+                        "resources": [
+                            {
+                                "name": "GroundGrid",
+                                "type": "4",
+                                "subtype": "0",
+                                "resourceId": "7",
+                                "dependency": "0",
+                                "uid": "1498868158392542:504",
+                                "fileId": "2",
+                                "originalId": "18446744073709551615",
+                                "publicId": "11",
+                                "source": "",
+                                "additional": ""
+                            },
+                            {
+                                "name": "WorldObjectController",
+                                "type": "4",
+                                "subtype": "0",
+                                "resourceId": "13",
+                                "dependency": "0",
+                                "uid": "1498868868171510:1508",
+                                "fileId": "6",
+                                "originalId": "18446744073709551615",
+                                "publicId": "12",
+                                "source": "",
+                                "additional": ""
+                            },
+                            {
+                                "name": "CutoutSceneController",
+                                "type": "4",
+                                "subtype": "0",
+                                "resourceId": "58",
+                                "dependency": "0",
+                                "uid": "1508792307502118:12224",
+                                "fileId": "7",
+                                "originalId": "18446744073709551615",
+                                "publicId": "13",
+                                "source": "",
+                                "additional": ""
+                            },
+                            {
+                                "name": "Touchaudio",
+                                "type": "4",
+                                "subtype": "0",
+                                "resourceId": "143",
+                                "dependency": "0",
+                                "uid": "1546902297119415:11601",
+                                "fileId": "10",
+                                "originalId": "18446744073709551615",
+                                "publicId": "14",
+                                "source": "",
+                                "additional": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
         "InspectorController": {
             "selection": ""
         },
@@ -282,139 +779,17 @@
             "13": "",
             "14": "",
             "15": "",
-            "16": ""
+            "16": "",
+            "17": "",
+            "18": "",
+            "19": "",
+            "20": ""
         },
         "ObjectPrefabController": {
             "state": {
                 "objectToInfo": ""
             },
             "importInfo": ""
-        },
-        "ResourceController": {
-            "tree": {
-                "name": "Root",
-                "groups": [
-                    {
-                        "name": "Textures",
-                        "groups": "",
-                        "resources": [
-                            {
-                                "name": "Camera Output",
-                                "resourceId": "1",
-                                "extension": ""
-                            },
-                            {
-                                "name": "Device Camera Texture",
-                                "resourceId": "2",
-                                "extension": ""
-                            },
-                            {
-                                "name": "ground_grid",
-                                "resourceId": "9",
-                                "extension": "png"
-                            },
-                            {
-                                "name": "ground_grid_mask",
-                                "resourceId": "10",
-                                "extension": "png"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Meshes",
-                        "groups": "",
-                        "resources": [
-                            {
-                                "name": "ground_grid_mesh",
-                                "resourceId": "5",
-                                "extension": "mesh"
-                            },
-                            {
-                                "name": "touch_collision_cube",
-                                "resourceId": "68",
-                                "extension": "mesh"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Materials",
-                        "groups": "",
-                        "resources": [
-                            {
-                                "name": "ground_grid",
-                                "resourceId": "11",
-                                "extension": ""
-                            },
-                            {
-                                "name": "touch_collision",
-                                "resourceId": "118",
-                                "extension": ""
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Scripts",
-                        "groups": "",
-                        "resources": [
-                            {
-                                "name": "GroundGrid",
-                                "resourceId": "7",
-                                "extension": "js"
-                            },
-                            {
-                                "name": "WorldObjectController",
-                                "resourceId": "13",
-                                "extension": "js"
-                            },
-                            {
-                                "name": "CutoutSceneController",
-                                "resourceId": "58",
-                                "extension": "js"
-                            },
-                            {
-                                "name": "Touchaudio",
-                                "resourceId": "143",
-                                "extension": "js"
-                            }
-                        ]
-                    }
-                ],
-                "resources": ""
-            },
-            "publicAssets": [
-                {
-                    "id": "5",
-                    "path": "Meshes\/ground_grid_mesh.mesh"
-                },
-                {
-                    "id": "7",
-                    "path": "Scripts\/GroundGrid.js"
-                },
-                {
-                    "id": "9",
-                    "path": "Textures\/ground_grid.png"
-                },
-                {
-                    "id": "10",
-                    "path": "Textures\/ground_grid_mask.png"
-                },
-                {
-                    "id": "13",
-                    "path": "Scripts\/WorldObjectController.js"
-                },
-                {
-                    "id": "58",
-                    "path": "Scripts\/CutoutSceneController.js"
-                },
-                {
-                    "id": "68",
-                    "path": "Meshes\/touch_collision_cube.mesh"
-                },
-                {
-                    "id": "143",
-                    "path": "Scripts\/Touchaudio.js"
-                }
-            ]
         }
     }
 }

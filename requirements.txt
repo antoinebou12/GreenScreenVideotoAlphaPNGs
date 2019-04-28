@@ -1,0 +1,9 @@
+pillow
+numpy
+natsort
+opencv-python
+youtube_dl
+argparse
+argcomplete
+imageio
+numpngw

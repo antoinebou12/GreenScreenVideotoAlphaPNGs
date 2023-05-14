@@ -1,13 +1,10 @@
 # Green Screen Video to Sequences of Alpha PNGs
 
-Green Screen Video to sequence of PNGs files replacing the green by an alpha layer in python3
+This Python-based tool converts green screen videos into sequences of PNG files, replacing the green background with an alpha layer. This tool is particularly useful for importing videos into Lens Studio, as demonstrated in the following video: [Lens Studio Guide](https://www.youtube.com/watch?v=7kmFh8KtgEg)
 
-I made this from making easier to import video in lens studio after watching this video:
+## Prerequisites
 
-https://www.youtube.com/watch?v=7kmFh8KtgEg
-
-## Dependencies
-
+The tool depends on the following Python libraries:
 - PIL (pillow)
 - numpy
 - natsort
@@ -18,54 +15,55 @@ https://www.youtube.com/watch?v=7kmFh8KtgEg
 - imageio
 - numpngw
 - APNGLib
-    
-## Install
+
+## Installation
+
+To install the necessary dependencies, run the provided shell script:
+
 ```bash
 bash install.sh
 ```
 
-## Using the script
+## Usage
 
-- [X] Make it work
-- [X] Better sort for the file (order)
+### Converting a Green Screen Video to PNGs
+
+To convert a YouTube video, use the following command:
 
 ```bash
 python3 GreenVideotoAlphaPNGs.py https://www.youtube.com/watch?v=ybX4VuArZOQ
 ```
 
-### For making transparent (alpha) GIF or JIF
-Change in the main the dir variable by the folder name
-I used a the APNGLib to create the transparent gif. It is slow, but i didn't found a other solution for now
-Installed the [APNGLib](https://github.com/slicer4ever/APNGLib) in the same named directory with
+### Creating a Transparent (Alpha) GIF
 
+First, set the `dir` variable in the main function to the desired folder name. 
 
-- [X] Make it work
-- [X] Make sure the gif is in alpha
+To create a transparent GIF, use the following command:
 
 ```bash
 python3 GIFGenerator.py "Joker from Persona 5 Default Dance (Green Screen)-ybX4VuArZOQ_alpha"
 ```
 
-### For making transparent (alpha) video (W.I.P)
-Create video with a custom speed(fps)
+**Note**: GIF generation is quite slow due to the use of the APNGLib library, which is currently the only viable solution.
 
-- [X] Make it work
-- [ ] Make sure the video is in alpha
+### Creating a Transparent (Alpha) Video (Work in Progress)
+
+You can create a video with a custom speed (fps) using the following command:
 
 ```bash
 python3 GIFGenerator.py "Joker from Persona 5 Default Dance (Green Screen)-ybX4VuArZOQ_alpha" --fps 24
 ```
 
-## Lens Studio (Snapchat AR) 
+## Lens Studio (Snapchat AR)
 
-After generating the sequence of images just click in Resources panel
-Add New -> 2D animation from files -> Ok in the popup menu
-change the setting for those object
-- audio
-- cutout animation
+After generating the sequence of images, you can import them into Lens Studio:
 
-OR
+1. Click on the Resources panel.
+2. Choose Add New -> 2D animation from files -> Ok in the popup menu.
+3. Adjust the settings for the imported object, including audio and cutout animation.
 
-Put alpha gif or video in lens studio
+Alternatively, you can import the generated alpha GIF or video directly into Lens Studio.
 
 ![add 2D animation in lens studio](https://raw.githubusercontent.com/antoinebou13/GreenScreenVideotoAlphaPNGs/master/images/addanim.jpg "add 2D animation")
+
+This Python-based tool simplifies the process of using green screen videos in Lens Studio, thereby facilitating the creation of immersive AR experiences.

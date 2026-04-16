@@ -1,9 +1,4 @@
-pillow
-numpy
-natsort
-opencv-python
-youtube_dl
-argparse
-argcomplete
-imageio
-numpngw
+# Prefer uv (see README): `uv sync --extra dev`
+# Legacy pip: `pip install -e ".[dev]"`
+
+-e .[dev]

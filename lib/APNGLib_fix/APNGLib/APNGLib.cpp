@@ -1336,7 +1336,7 @@ static PyObject *APNGLib_Decompile(PyObject *Self, PyObject *Args){
 	strncpy(szInput, InputFilename, sizeof(szInput));
 	int res = load_apng(szInput, Frames, &NbrLoops);
 	if(res<0){
-		printf("load_apng failed: '%s'", szInput);
+		PyErr_Format(PyExc_RuntimeError, "load_apng failed: '%s'", szInput);
 		return NULL;
 	}
 	unsigned int NbrFrames = Frames.size();
@@ -1377,7 +1377,7 @@ static PyObject *APNGLib_MakeGIF(PyObject *Self, PyObject *Args){
 	strncpy(szInput, InputFilename, sizeof(szInput));
 	int res = load_apng(szInput, Frames, &NbrLoops);
 	if(res<0){
-		printf("load_apng failed: '%s'", szInput);
+		PyErr_Format(PyExc_RuntimeError, "load_apng failed: '%s'", szInput);
 		return NULL;
 	}
 	unsigned int NbrFrames = Frames.size();
@@ -1400,7 +1400,7 @@ static PyObject *APNGLib_MakeGIF(PyObject *Self, PyObject *Args){
 		apng_to_agif(Frames, pAGIF);
 
 		if (save_agif(szOut, Frames, pAGIF, NbrLoops) != 0){
-		  printf("save_agif() failed: '%s'\n", szOut);
+		  PyErr_Format(PyExc_RuntimeError, "save_agif() failed: '%s'", szOut);
 		  return NULL;
 		}
 
